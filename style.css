@@ -12,15 +12,15 @@ img {
     margin: 5px 15px;
 }
 
+
+/* slide on */
 .anima-1:hover {
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     
 }
 
- 
   @keyframes scale-up-center {
     0% {
-      transform: scale(0.5);
       transform: scale(0.5);
     }
     100% {
@@ -29,42 +29,42 @@ img {
     }
   }
 
-  .anima-rotate:hover {
-                animation: rotate-scale-up 0.65s linear both;
+
+/* rotate */
+.anima-rotate:hover {
+    animation: rotate-scale-up 0.65s linear both;
   }
   
   @keyframes rotate-scale-up {
     0% {
       transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
     }
     50% {
       transform: scale(2) rotateZ(180deg);
-              transform: scale(2) rotateZ(180deg);
     }
     100% {
       transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
     }
   }
   
+  
+  /* mirror */
   .anima-mirror:hover {
        animation: flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-
   }
 
   @keyframes flip-vertical-bck {
     0% {
       transform: translateZ(0) rotateY(0);
-      transform: translateZ(0) rotateY(0);
     }
     100% {
-      transform: translateZ(-260px) rotateY(-180deg);
       transform: translateZ(-260px) rotateY(-180deg);
     }
   }
   
-  .anima-slide:hover {
+
+/* slide off */
+.anima-slide:hover {
       animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
@@ -72,16 +72,15 @@ img {
   @keyframes slide-top {
     0% {
       transform: translateY(0);
-              transform: translateY(0);
     }
     100% {
       transform: translateY(-100px);
-              transform: translateY(-100px);
     }
   }
   
-  
-  .anima-shrink {
+
+/* shrink */
+.anima-shrink {
     display: inline-block;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -90,14 +89,12 @@ img {
   }
   .anima-shrink:hover {
     transform: scale(0.9);
-   
   }
 
-  .anima-shadow:hover {
-    
-      animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-              animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    
+
+/* shadow */
+.anima-shadow:hover {
+      animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;    
   }
 
 
@@ -111,12 +108,12 @@ img {
   100% {
     transform: translateZ(50px);
     
-    box-shadow: 0 0 20px 0px rgba(255,18,18,0.85);
-           
+    box-shadow: 0 0 20px 0px rgba(255,18,18,0.85);     
   }
 }
 
 
+/* bounce */
 .anima-bounce {
     display: inline-block;
     transform: perspective(1px) translateZ(0);
@@ -127,10 +124,10 @@ img {
   .anima-bounce:hover {
     transform: scale(0.8);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-
 }
 
 
+/* buzz */
 .anima-buzz{
   display: inline-block;
   transform: perspective(1px) translateZ(0);
@@ -153,7 +150,7 @@ img {
 }
 
 
-
+/* wobble */
 @keyframes hvr-wobble-bottom {
   16.65% {
     transform: skew(-12deg);
